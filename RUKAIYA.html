@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rukaiya | Personal Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #0b0b18;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+            position: sticky;
+            top: 0;
+            background: rgba(11,11,24,0.9);
+            backdrop-filter: blur(15px);
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 27px;
+            font-weight: 800;
+            color: #a78bfa;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 28px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #a78bfa;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            padding: 70px 10%;
+        }
+
+        .hero-content {
+            max-width: 750px;
+        }
+
+        .hero h3 {
+            color: #a78bfa;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .hero h1 {
+            font-size: clamp(45px, 8vw, 85px);
+            font-weight: 800;
+            margin: 15px 0;
+            line-height: 1.1;
+        }
+
+        .hero h1 span {
+            color: #a78bfa;
+        }
+
+        .hero p {
+            color: #b5b5c9;
+            font-size: 16px;
+            line-height: 1.9;
+            max-width: 600px;
+            margin: 20px 0 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 28px;
+            background: #8b5cf6;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #a78bfa;
+            transform: translateY(-4px);
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        .section-title {
+            font-size: 35px;
+            margin-bottom: 35px;
+        }
+
+        .section-title span {
+            color: #a78bfa;
+        }
+
+        .about p {
+            color: #b5b5c9;
+            line-height: 2;
+            max-width: 800px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background: #19192e;
+            border: 1px solid #373052;
+            padding: 15px 25px;
+            border-radius: 12px;
+            color: #c4b5fd;
+            transition: 0.3s;
+        }
+
+        .skill:hover {
+            background: #8b5cf6;
+            color: white;
+            transform: translateY(-5px);
+        }
+
+        .project-card {
+            background: #19192e;
+            border: 1px solid #302a48;
+            padding: 30px;
+            border-radius: 18px;
+            max-width: 600px;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-7px);
+            border-color: #8b5cf6;
+        }
+
+        .project-card h3 {
+            color: #c4b5fd;
+            margin-bottom: 12px;
+        }
+
+        .project-card p {
+            color: #b5b5c9;
+            line-height: 1.8;
+        }
+
+        .contact p {
+            color: #b5b5c9;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #85859d;
+            border-top: 1px solid #29293c;
+        }
+
+        @media(max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 12px;
+            }
+
+            .hero {
+                min-height: 75vh;
+            }
+
+            section {
+                padding: 60px 8%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">R.</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h3>Hello, Welcome to my portfolio!</h3>
+
+            <h1>I'm <span>Rukaiya.</span></h1>
+
+            <h3>Aspiring Professional & Creative Learner</h3>
+
+            <p>
+                I am passionate about technology, business,
+                creativity and continuous learning.
+                I enjoy exploring new ideas and turning
+                them into meaningful projects.
+            </p>
+
+            <a href="#about" class="btn">Discover More</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="section-title">About <span>Me</span></h2>
+
+        <p>
+            Hi! I'm Rukaiya. I am an ambitious learner
+            interested in finance, business, technology
+            and innovation. I believe in continuous
+            improvement and developing new skills.
+            My goal is to combine creativity and
+            technology to create something valuable.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">My <span>Skills</span></h2>
+
+        <div class="skills-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Basic Excel</div>
+            <div class="skill">Accounting</div>
+            <div class="skill">Business Communication</div>
+            <div class="skill">AI Tools</div>
+            <div class="skill">Creative Thinking</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">My <span>Projects</span></h2>
+
+        <div class="project-card">
+            <h3>My First Portfolio Website</h3>
+            <p>
+                My personal portfolio website created
+                using HTML and CSS to introduce myself,
+                showcase my skills and share my journey.
+            </p>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact <span>Me</span></h2>
+
+        <p>Let's connect and create something amazing!</p>
+
+        <a href="mailto:your-email@example.com" class="btn">
+            Get In Touch
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2026 Rukaiya. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+  

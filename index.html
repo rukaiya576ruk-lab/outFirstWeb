@@ -1,8 +1,320 @@
-<html
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    This is my first Webpage
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rukaiya Jewellers | Elegance in Every Detail</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #100e0b;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #3c3020;
+    background: #100e0b;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    color: #d8b46a;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: #eee;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 13px;
+}
+
+nav a:hover {
+    color: #d8b46a;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+    background:
+    linear-gradient(90deg, #100e0b 15%, rgba(16,14,11,.75)),
+    url('https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=1800')
+    center/cover;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h3 {
+    color: #d8b46a;
+    letter-spacing: 5px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(55px, 8vw, 90px);
+    line-height: 1.05;
+    font-weight: 500;
+}
+
+.hero p {
+    color: #d0c8bb;
+    line-height: 2;
+    margin: 25px 0 35px;
+    max-width: 480px;
+}
+
+.btn {
+    display: inline-block;
+    background: #c9a45c;
+    color: #17120b;
+    padding: 14px 32px;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #f0d49a;
+    transform: translateY(-3px);
+}
+
+section {
+    padding: 85px 10%;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.heading h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    color: #d8b46a;
+    font-weight: 500;
+}
+
+.heading p {
+    color: #aaa;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product {
+    background: #1c1914;
+    text-align: center;
+    padding-bottom: 25px;
+    transition: .3s;
+    border: 1px solid #30271b;
+}
+
+.product:hover {
+    transform: translateY(-8px);
+    border-color: #c9a45c;
+}
+
+.product img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+
+.product h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 27px;
+    color: #d8b46a;
+    margin-top: 18px;
+}
+
+.product p {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 8px;
+}
+
+.about {
+    background: #1a1712;
+    text-align: center;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    color: #c3bbae;
+    line-height: 2.2;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    color: #bbb;
+    margin: 15px 0 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #3c3020;
+    color: #a99c83;
+    font-size: 12px;
+}
+
+@media(max-width: 750px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav a {
+        margin: 0 6px;
+        font-size: 11px;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: 75vh;
+        background-position: center;
+    }
+}
+</style>
 </head>
+
 <body>
-    Hi I am the new web developer
+
+<header>
+    <div class="logo">RUKAIYA JEWELLERS</div>
+
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#collection">COLLECTION</a>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+
+        <h3>TIMELESS BEAUTY • ETERNAL ELEGANCE</h3>
+
+        <h1>Jewellery That<br> Tells Your Story.</h1>
+
+        <p>
+            Discover the beauty of fine jewellery.
+            Celebrate your special moments with
+            elegance, craftsmanship and timeless style.
+        </p>
+
+        <a href="#collection" class="btn">EXPLORE COLLECTION</a>
+
+    </div>
+</section>
+
+<section id="collection">
+
+    <div class="heading">
+        <h2>Our Collections</h2>
+        <p>Elegance crafted for every occasion.</p>
+    </div>
+
+    <div class="products">
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=700" alt="Gold rings">
+            <h3>Elegant Rings</h3>
+            <p>Beauty in every detail</p>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=700" alt="Necklace">
+            <h3>Beautiful Necklaces</h3>
+            <p>Made for special moments</p>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=700" alt="Earrings">
+            <h3>Classic Earrings</h3>
+            <p>Graceful and timeless</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="about" id="about">
+
+    <div class="heading">
+        <h2>About Us</h2>
+        <p>A tradition of beauty and elegance.</p>
+    </div>
+
+    <p>
+        Welcome to Rukaiya Jewellers.
+        We believe jewellery represents more than beauty.
+        It represents love, memories and unforgettable
+        moments. Our goal is to help you find jewellery
+        that makes every occasion special.
+    </p>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <div class="heading">
+        <h2>Visit Our Store</h2>
+        <p>We would love to welcome you.</p>
+    </div>
+
+    <p>Moratuwa, Sri Lanka</p>
+
+    <a class="btn"
+       href="https://wa.me/94770000000"
+       target="_blank">
+       CONTACT US ON WHATSAPP
+    </a>
+
+</section>
+
+<footer>
+    © 2026 Rukaiya Jewellers. All Rights Reserved.
+</footer>
+
 </body>
 </html>
